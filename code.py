@@ -1,12 +1,6 @@
-#rich | pyfiglet | keyword | range
-#list=[,] | sets={,} | tuples=(,) | dict={key:value,}
-# range(start,stop,step)
-# input -> str |  int(input) -> int | float(input) -> float
-# import getpass
-#password = getpass.getpass('Please enter psswd:')
-# def => define
-# https://jsonplaceholder.typicode.com/posts
+import marshal 
 from rich import print
+<<<<<<< HEAD
 import requests
 
 url = 'https://jsonplaceholder.typicode.com/'
@@ -19,3 +13,24 @@ if response.status_code == 200 :
 else :
 
     print('[bold red] The server is down')
+=======
+
+with open("fuc.py","r",encoding="utf-8") as file:
+    code = file.read()
+    print(code)
+    print('_'*120 + '\n')
+en_code = marshal.dumps(compile(code,'<string>','exec'))
+print(en_code)
+
+with open("script.py","wb") as file:
+    file.write(en_code)
+
+with open("script.py","rb") as file:
+    de_code = marshal.loads(file.read())
+    print(de_code, '_'*120 +'\n')
+
+import py_compile
+
+py_compile.compile('fuc.py',cfile='n_fuc.pyc')
+print('DONE')
+>>>>>>> 5813c79 (update code python)
