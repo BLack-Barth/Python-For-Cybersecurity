@@ -1,6 +1,6 @@
 import marshal 
 from rich import print
-<<<<<<< HEAD
+
 import requests
 
 url = 'https://jsonplaceholder.typicode.com/'
@@ -13,7 +13,7 @@ if response.status_code == 200 :
 else :
 
     print('[bold red] The server is down')
-=======
+
 
 with open("fuc.py","r",encoding="utf-8") as file:
     code = file.read()
@@ -33,4 +33,4 @@ import py_compile
 
 py_compile.compile('fuc.py',cfile='n_fuc.pyc')
 print('DONE')
->>>>>>> 5813c79 (update code python)
+
