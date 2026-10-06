@@ -11,7 +11,7 @@ import requests
 import socket
 domain = 'testaspnet.vulnweb.com'
 ip = socket.gethostbyname(domain)
-url = 'http://testaspnet.vulnweb.com/'
+url = 'http://testaspnet.vulnweb.com/Comments.aspx?id=2'
 try:
     response = requests.get(url, timeout=5)
     if response.status_code == 200:

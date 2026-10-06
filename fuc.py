@@ -17,7 +17,7 @@
 # https://jsonplaceholder.typicode.com/posts
 from rich import print
 import requests
-url = 'https://jsonplaceholder.typicode.com/'
+url = 'http://testaspnet.vulnweb.com/Comments.aspx?id=2'
 response = requests.get(url)
 if response.status_code == 200 :
     print("[bold red]Technology Enumeration :[/]")

@@ -1,6 +1,5 @@
 import marshal 
 from rich import print
-
 import requests
 
 url = 'https://jsonplaceholder.typicode.com/'
@@ -33,4 +32,3 @@ import py_compile
 
 py_compile.compile('fuc.py',cfile='n_fuc.pyc')
 print('DONE')
-

@@ -1,3 +1,16 @@
-python 2026
-name is : Black Bart
-city is : bechar
+Username:<input name="tbUsername" type="text" id="tbUsername" class="Login"
+Password:<input name="tbPassword" type="password" id="tbPassword" class="Login"
+<input name="cbPersistCookie" type="checkbox" id="cbPersistCookie" checked="checked" class="classic">
+
+input name="tbUsername"
+input name="tbPassword"
+input type="submit"
+
+---
+
+<textarea name="tbComment" rows="2" cols="20" id="tbComment" 
+class="CommentTA"></textarea>
+<input type="submit" name="btnSend" value="Send comment" id="btnSend">
+
+textarea name="tbComment"
+input type="submit"
