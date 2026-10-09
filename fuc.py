@@ -18,10 +18,13 @@
 from rich import print
 import requests
 url = 'http://testaspnet.vulnweb.com/Comments.aspx?id=2'
-response = requests.get(url)
-if response.status_code == 200 :
-    print("[bold red]Technology Enumeration :[/]")
-    for key,value in response.headers.items() :
-        print(f"[underline yellow]{key} [/]: [italic blue]{value} [/]")
-else :
-    print('[bold red] The server is down')
+try:
+    response = requests.get(url,timeout=5)
+    if response.status_code == 200 :
+        print("[bold red]Technology Enumeration :[/]")
+        for key,value in response.headers.items() :
+            print(f"[underline yellow]{key} [/]: [italic blue]{value} [/]")
+    else :
+        print(f'[bold red]The server return status code:[/]{response.status_code}')
+except requests.exceptions.RequestException as error:
+    print(f'[bold red]Connection error!:[/]{error}')
