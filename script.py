@@ -1,11 +1,5 @@
-from rich import print
-
-liste = [1,2,3,4,5]
-liste.append(6)
-sets = {1,2,3,4,5}
-print(liste)
-sets.add(6)
-sets2 = {0}
-sets.remove(6)
-sets.discard(9)
-print(sets)
+def sc():
+    from rich import print
+    name = input("Enter your name: ")
+    age = input("Enter your age: ")
+    print(f"Your name is {name} and you are {age} years old")

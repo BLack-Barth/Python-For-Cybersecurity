@@ -14,3 +14,8 @@ class="CommentTA"></textarea>
 
 textarea name="tbComment"
 input type="submit"
+
+---
+<input _ngcontent-ng-c347502026="" id="email" matinput="" placeholder="" aria-label="Text field for the login email" class="mat-mdc-input-element mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored" name="ng.form1.email" required="" aria-required="true" aria-
+
+<input _ngcontent-ng-c347502026="" id="password" matinput="" placeholder="" aria-label="Text field for the login password" class="mat-mdc-input-element mat-mdc-form-field-input-control mdc-text-field__input cdk-text-field-autofill-monitored" type="password" minlength="1" name="ng.form1.password" required="" aria-required="true" aria-describedby="mat-mdc-error-3">
